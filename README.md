@@ -1,4 +1,15 @@
 
+## Telas do Sistema
+### Tela de Login
+Aqui o usuário faz o login com Firebase Authentication.
+
+![Tela Inicial](assets/login-ippark.PNG)
+
+### Tela Final
+ Mapa interativo com Leaflet.js.
+
+![Tela Final](assets/mapa-ippark.PNG)
+
 # 💡 IPPARK - Sistema de Monitoramento de Postes Públicos
 
 O **IPPARK** é um sistema web para visualização, cadastro e controle de postes públicos em um mapa interativo. Desenvolvido com foco na gestão urbana da cidade de Jucás/CE, ele permite o acompanhamento em tempo real da situação dos postes e facilita a manutenção da iluminação pública.
