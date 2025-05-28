@@ -1,0 +1,302 @@
+/* Estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Estilos do login */
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.login-container input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-container button:hover {
+  background: #45a049;
+}
+
+/* Estilos do mapa */
+#map {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Botão de logout */
+#logout {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#logout:hover {
+  background: #ff0000;
+  transform: translateY(-1px);
+}
+
+/* Botões de controle do mapa */
+.report-button,
+.edit-button {
+  padding: 12px 20px !important;
+  margin: 10px !important;
+  border: none !important;
+  border-radius: 6px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  min-width: 160px !important;
+  color: white !important;
+}
+
+/* Botão de relatório */
+.report-button {
+  background: #4CAF50 !important;
+}
+
+.report-button:hover {
+  background: #45a049 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2) !important;
+}
+
+/* Botão de edição */
+.edit-button {
+  background: #2196F3 !important;
+}
+
+.edit-button:hover {
+  background: #1976D2 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.2) !important;
+}
+
+.edit-button.active {
+  background: #f44336 !important;
+}
+
+.edit-button.active:hover {
+  background: #d32f2f !important;
+  box-shadow: 0 4px 12px rgba(244, 67, 54, 0.2) !important;
+}
+
+/* Campo de busca */
+.search-control-container {
+  margin: 10px;
+}
+
+.search-container {
+  display: flex;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.search-box {
+  padding: 12px;
+  border: none;
+  font-size: 14px;
+  width: 200px;
+  outline: none;
+}
+
+.search-box::placeholder {
+  color: #666;
+}
+
+.search-button {
+  padding: 12px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  transition: all 0.3s ease;
+}
+
+.search-button:hover {
+  background: #45a049;
+}
+
+/* Popup do mapa */
+.popup-content {
+  padding: 15px;
+  min-width: 250px;
+}
+
+.popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.popup-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.edit-id-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-id-button:hover {
+  background-color: #f0f0f0;
+}
+
+.popup-content p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.popup-content strong {
+  color: #4CAF50;
+}
+
+.status-form {
+  margin: 15px 0;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.status-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.status-form select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.status-form select:focus {
+  border-color: #4CAF50;
+}
+
+.coordinates {
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+  font-family: monospace;
+}
+
+.delete-button {
+  width: 100%;
+  padding: 10px;
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.delete-button:hover {
+  background: #ff0000;
+  transform: translateY(-1px);
+}
+
+/* Controles de zoom */
+.leaflet-control-zoom {
+  margin: 15px !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  background: white !important;
+  border: none !important;
+  width: 36px !important;
+  height: 36px !important;
+  line-height: 36px !important;
+  font-size: 18px !important;
+  color: #333 !important;
+  transition: all 0.3s ease !important;
+}
+
+.leaflet-control-zoom-in:hover,
+.leaflet-control-zoom-out:hover {
+  background: #f4f4f4 !important;
+  color: #000 !important;
+} 
