@@ -13,9 +13,8 @@ body {
 /* Estilos do login */
 .login-container {
   max-width: 400px;
-  width: 90%;
-  margin: 50px auto;
-  padding: 1.5rem;
+  margin: 100px auto;
+  padding: 2rem;
   background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -62,17 +61,14 @@ body {
 #map {
   height: 100vh;
   width: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 
 /* Botão de logout */
 #logout {
   position: fixed;
-  top: 10px;
-  right: 10px;
-  padding: 8px 16px;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
   background: #ff4444;
   color: white;
   border: none;
@@ -152,15 +148,13 @@ body {
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 100%;
-  max-width: 300px;
 }
 
 .search-box {
   padding: 12px;
   border: none;
   font-size: 14px;
-  width: 100%;
+  width: 200px;
   outline: none;
 }
 
@@ -305,117 +299,4 @@ body {
 .leaflet-control-zoom-out:hover {
   background: #f4f4f4 !important;
   color: #000 !important;
-}
-
-/* Media Queries para Responsividade */
-@media screen and (max-width: 768px) {
-  .login-container {
-    margin: 20px auto;
-    padding: 1rem;
-  }
-
-  .login-container h2 {
-    font-size: 1.5rem;
-  }
-
-  .login-container input,
-  .login-container button {
-    padding: 10px;
-    font-size: 0.9rem;
-  }
-
-  #logout {
-    top: 5px;
-    right: 5px;
-    padding: 6px 12px;
-    font-size: 12px;
-  }
-
-  .report-button,
-  .edit-button {
-    padding: 8px 16px !important;
-    font-size: 12px !important;
-    min-width: 140px !important;
-  }
-
-  .search-container {
-    max-width: 200px;
-  }
-
-  .search-box {
-    padding: 8px;
-    font-size: 12px;
-  }
-
-  .popup-content {
-    min-width: 200px;
-    padding: 10px;
-  }
-
-  .popup-header h3 {
-    font-size: 14px;
-  }
-
-  .popup-content p {
-    font-size: 12px;
-  }
-
-  .status-form select {
-    padding: 6px;
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .login-container {
-    width: 95%;
-    margin: 10px auto;
-  }
-
-  .report-button,
-  .edit-button {
-    padding: 6px 12px !important;
-    font-size: 11px !important;
-    min-width: 120px !important;
-  }
-
-  .search-container {
-    max-width: 150px;
-  }
-
-  .search-box {
-    padding: 6px;
-    font-size: 11px;
-  }
-
-  .popup-content {
-    min-width: 180px;
-  }
-}
-
-/* Ajustes para telas muito pequenas */
-@media screen and (max-width: 320px) {
-  .report-button,
-  .edit-button {
-    min-width: 100px !important;
-    font-size: 10px !important;
-  }
-
-  .search-container {
-    max-width: 120px;
-  }
-}
-
-/* Ajustes para orientação paisagem em dispositivos móveis */
-@media screen and (max-height: 480px) and (orientation: landscape) {
-  .login-container {
-    margin: 10px auto;
-    padding: 0.8rem;
-  }
-
-  .login-container input,
-  .login-container button {
-    padding: 8px;
-    margin-bottom: 0.5rem;
-  }
 } 
